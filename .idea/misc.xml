@@ -5,8 +5,10 @@
       <map>
         <entry key="..\:/Samsung/android/Info/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2025" />
         <entry key="..\:/Samsung/android/Info/app/src/main/res/drawable/angles.xml" value="0.165" />
+        <entry key="..\:/Samsung/android/Info/app/src/main/res/drawable/borders.xml" value="0.1905" />
         <entry key="..\:/Samsung/android/Info/app/src/main/res/drawable/ic_icon.xml" value="0.2025" />
         <entry key="..\:/Samsung/android/Info/app/src/main/res/drawable/ic_launcher_background.xml" value="0.165" />
+        <entry key="..\:/Samsung/android/Info/app/src/main/res/layout-v28/formule_block.xml" value="0.3070652173913043" />
         <entry key="..\:/Samsung/android/Info/app/src/main/res/layout/c0.xml" value="0.30085470085470084" />
         <entry key="..\:/Samsung/android/Info/app/src/main/res/layout/c1.xml" value="0.30085470085470084" />
         <entry key="..\:/Samsung/android/Info/app/src/main/res/layout/c10.xml" value="0.30085470085470084" />
@@ -30,11 +32,20 @@
         <entry key="..\:/Samsung/android/Info/app/src/main/res/layout/c9.xml" value="0.30085470085470084" />
         <entry key="..\:/Samsung/android/Info/app/src/main/res/layout/conspect.xml" value="0.15726495726495726" />
         <entry key="..\:/Samsung/android/Info/app/src/main/res/layout/conspect_menu.xml" value="0.25" />
+        <entry key="..\:/Samsung/android/Info/app/src/main/res/layout/formule_block.xml" value="0.5" />
         <entry key="..\:/Samsung/android/Info/app/src/main/res/layout/list_conspect.xml" value="0.288034188034188" />
         <entry key="..\:/Samsung/android/Info/app/src/main/res/layout/list_conspect_python.xml" value="0.288034188034188" />
         <entry key="..\:/Samsung/android/Info/app/src/main/res/layout/main.xml" value="0.2" />
+        <entry key="..\:/Samsung/android/Info/app/src/main/res/layout/text_block.xml" value="0.33" />
+        <entry key="..\:/Samsung/android/Info/app/src/main/res/layout/text_block_big.xml" value="0.258974358974359" />
+        <entry key="..\:/Samsung/android/Info/app/src/main/res/layout/text_block_medium.xml" value="0.5" />
       </map>
     </option>
+  </component>
+  <component name="EntryPointsManager">
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="android.annotation.SuppressLint" />
+    </list>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />

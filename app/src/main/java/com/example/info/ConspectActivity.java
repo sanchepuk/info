@@ -1,13 +1,18 @@
 package com.example.info;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+
+import java.util.zip.Inflater;
 
 public class ConspectActivity extends Activity {
     Button btn_left;
@@ -18,12 +23,17 @@ public class ConspectActivity extends Activity {
     Button navigate;
     Intent memory;
     int now_layout;
-    Conspect[][] conspects;
+    LayoutInflater inflater;
+    LinearLayout layout;
+    Context context;
     int now;
+    String []names;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.conspect_menu);
+        inflater = getLayoutInflater();
+        context = this;
         btn_left = findViewById(R.id.left);
         btn_right = findViewById(R.id.right);
         btn_exit = findViewById(R.id.exit);
@@ -31,24 +41,26 @@ public class ConspectActivity extends Activity {
         title_big = findViewById(R.id.title_big);
         navigate = findViewById(R.id.navigate);
         memory = getIntent();
-        conspects = new Conspect[2][21];
+        names = new String[15];
+        navigate.setVisibility(View.VISIBLE);
+        layout = findViewById(R.id.conspect_layout);
         now_layout = memory.getIntExtra("layout", 0);
         now = memory.getIntExtra("now", 0);
-        init();
+        getNames();
         repaint();
         btn_left.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                conspects[now_layout][now].layout.setVisibility(View.GONE);
                 now--;
+                ControllerInfo.init(inflater, now_layout, now, layout, context);
                 repaint();
             }
         });
         btn_right.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                conspects[now_layout][now].layout.setVisibility(View.GONE);
                 now++;
+                ControllerInfo.init(inflater, now_layout, now, layout, context);
                 repaint();
             }
         });
@@ -65,41 +77,28 @@ public class ConspectActivity extends Activity {
             finish();
         });
     }
-    void init(){
-        conspects[0][0] = new Conspect(findViewById(R.id.c0), ((Button)findViewById(R.id.b0)).getText().toString());
-        conspects[0][1] = new Conspect(findViewById(R.id.c1), ((Button)findViewById(R.id.b1)).getText().toString());
-        conspects[0][2] = new Conspect(findViewById(R.id.c2), ((Button)findViewById(R.id.b2)).getText().toString());
-        conspects[0][3] = new Conspect(findViewById(R.id.c3), ((Button)findViewById(R.id.b3)).getText().toString());
-        conspects[0][4] = new Conspect(findViewById(R.id.c4), ((Button)findViewById(R.id.b4)).getText().toString());
-        conspects[0][5] = new Conspect(findViewById(R.id.c5), ((Button)findViewById(R.id.b5)).getText().toString());
-        conspects[0][6] = new Conspect(findViewById(R.id.c6), ((Button)findViewById(R.id.b6)).getText().toString());
-        conspects[0][7] = new Conspect(findViewById(R.id.c7), ((Button)findViewById(R.id.b7)).getText().toString());
-        conspects[0][8] = new Conspect(findViewById(R.id.c8), ((Button)findViewById(R.id.b8)).getText().toString());
-        conspects[0][9] = new Conspect(findViewById(R.id.c9), ((Button)findViewById(R.id.b9)).getText().toString());
-        conspects[0][10] = new Conspect(findViewById(R.id.c10), ((Button)findViewById(R.id.b10)).getText().toString());
-        conspects[0][11] = new Conspect(findViewById(R.id.c11), ((Button)findViewById(R.id.b11)).getText().toString());
-        conspects[0][12] = new Conspect(findViewById(R.id.c12), ((Button)findViewById(R.id.b12)).getText().toString());
-        conspects[0][13] = new Conspect(findViewById(R.id.c13), ((Button)findViewById(R.id.b13)).getText().toString());
-        conspects[0][14] = new Conspect(findViewById(R.id.c14), ((Button)findViewById(R.id.b14)).getText().toString());
-        conspects[1][0] = new Conspect(findViewById(R.id.c0), ((Button)findViewById(R.id.b0)).getText().toString());
-        conspects[1][1] = new Conspect(findViewById(R.id.c1), ((Button)findViewById(R.id.b1)).getText().toString());
-        conspects[1][2] = new Conspect(findViewById(R.id.c2), ((Button)findViewById(R.id.b2)).getText().toString());
-        conspects[1][3] = new Conspect(findViewById(R.id.c3), ((Button)findViewById(R.id.b3)).getText().toString());
-        conspects[1][4] = new Conspect(findViewById(R.id.c4), ((Button)findViewById(R.id.b4)).getText().toString());
-        conspects[1][5] = new Conspect(findViewById(R.id.c5), ((Button)findViewById(R.id.b5)).getText().toString());
-        conspects[1][6] = new Conspect(findViewById(R.id.c6), ((Button)findViewById(R.id.b6)).getText().toString());
-        conspects[1][7] = new Conspect(findViewById(R.id.c7), ((Button)findViewById(R.id.b7)).getText().toString());
-        conspects[1][8] = new Conspect(findViewById(R.id.c8), ((Button)findViewById(R.id.b8)).getText().toString());
-        conspects[1][9] = new Conspect(findViewById(R.id.c9), ((Button)findViewById(R.id.b9)).getText().toString());
-        conspects[1][10] = new Conspect(findViewById(R.id.c10), ((Button)findViewById(R.id.b10)).getText().toString());
-        conspects[1][11] = new Conspect(findViewById(R.id.c11), ((Button)findViewById(R.id.b11)).getText().toString());
-        conspects[1][12] = new Conspect(findViewById(R.id.c12), ((Button)findViewById(R.id.b12)).getText().toString());
-        conspects[1][13] = new Conspect(findViewById(R.id.c13), ((Button)findViewById(R.id.b13)).getText().toString());
-        conspects[1][14] = new Conspect(findViewById(R.id.c14), ((Button)findViewById(R.id.b14)).getText().toString());
+
+    void getNames(){
+        names[0] =   ((Button)findViewById(R.id.b0)).getText().toString();
+        names[1] =   ((Button)findViewById(R.id.b1)).getText().toString();
+        names[2] =   ((Button)findViewById(R.id.b2)).getText().toString();
+        names[3] =   ((Button)findViewById(R.id.b3)).getText().toString();
+        names[4] =   ((Button)findViewById(R.id.b4)).getText().toString();
+        names[5] =   ((Button)findViewById(R.id.b5)).getText().toString();
+        names[6] =   ((Button)findViewById(R.id.b6)).getText().toString();
+        names[7] =   ((Button)findViewById(R.id.b7)).getText().toString();
+        names[8] =   ((Button)findViewById(R.id.b8)).getText().toString();
+        names[9] =   ((Button)findViewById(R.id.b9)).getText().toString();
+        names[10] =  ((Button)findViewById(R.id.b10)).getText().toString();
+        names[11] =  ((Button)findViewById(R.id.b11)).getText().toString();
+        names[12] =  ((Button)findViewById(R.id.b12)).getText().toString();
+        names[13] =  ((Button)findViewById(R.id.b13)).getText().toString();
+        names[14] =  ((Button)findViewById(R.id.b14)).getText().toString();
     }
+
     void repaint(){
-        conspects[now_layout][now].layout.setVisibility(View.VISIBLE);
-        title_small.setText(conspects[now_layout][now].title);
+        ControllerInfo.init(inflater, now_layout, now, layout, context);
+        title_small.setText(names[now]);
         if (now_layout == 0){
             title_big.setText(R.string.teory);
             navigate.setText(R.string.practic);
@@ -110,7 +109,6 @@ public class ConspectActivity extends Activity {
         title_small.setVisibility(View.VISIBLE);
         btn_left.setVisibility(View.VISIBLE);
         btn_right.setVisibility(View.VISIBLE);
-        navigate.setVisibility(View.VISIBLE);
         if (now == 0){
             btn_left.setVisibility(View.INVISIBLE);
         }else if (now == 14){
