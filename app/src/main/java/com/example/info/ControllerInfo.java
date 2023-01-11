@@ -54,7 +54,24 @@ public class ControllerInfo {
                     AttentionBlock(getTextString(R.string.teory26));
                     break;
                 case 2:
+                    TextBlockSmall(getTextString(R.string.teory30));
+                    TextBlockMedium(getTextString(R.string.teory31));
                     ImageBlock(R.drawable.teory3);
+                    TextBlockMedium(getTextString(R.string.teory32));
+                    TextBlockSmall(getTextString(R.string.teory33));
+                    TextBlockSmall(getTextString(R.string.teory36));
+                    ImageBlock(R.drawable.teory30);
+                    AttentionBlock(getTextString(R.string.teory34));
+                    TextBlockSmall(getTextString(R.string.teory37));
+                    ImageBlock(R.drawable.teory31);
+                    AttentionBlock(getTextString(R.string.teory35));
+                    TextBlockSmall(getTextString(R.string.teory38));
+                    ImageBlock(R.drawable.teory32);
+                    TextBlockSmall(getTextString(R.string.teory39));
+                    ImageBlock(R.drawable.teory33);
+                    TextBlockMedium(getTextString(R.string.teory310));
+                    TextBlockSmall(getTextString(R.string.teory311));
+                    ImageBlock(R.drawable.teory34);
             }
         }
     }
