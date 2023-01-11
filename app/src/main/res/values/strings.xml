@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Info</string>
+    <string name="left"><![CDATA[<]]></string>
+    <string name="exit">Выход</string>
+    <string name="changeText">Выберите тему:</string>
+    <string name="right"><![CDATA[>]]></string>
+</resources>

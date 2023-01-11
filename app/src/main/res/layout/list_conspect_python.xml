@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/l_id_python1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Языки программирования"
+        android:textColor="@color/blue"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/b13"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/angles"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:text="Зачем изучать язык"
+        android:theme="@style/button"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/b14"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/angles"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:text="Среда программирования"
+        android:theme="@style/button"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/b15"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/angles"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:text="Первое приложение"
+        android:theme="@style/button"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Основные понятия"
+        android:textColor="@color/blue"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/b16"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/angles"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:text="Переменная"
+        android:theme="@style/button"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/b17"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/angles"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:text="Ввод-вывод"
+        android:theme="@style/button"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/b18"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/angles"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:text="Цикл"
+        android:theme="@style/button"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/b19"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/angles"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:text="Массив"
+        android:theme="@style/button"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/b20"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/angles"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:text="Метод"
+        android:theme="@style/button"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</LinearLayout>
