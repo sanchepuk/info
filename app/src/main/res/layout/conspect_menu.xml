@@ -13,7 +13,7 @@
 
         <TextView
             android:id="@+id/title_big"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:layout_weight="1"
@@ -23,7 +23,7 @@
             android:textSize="34sp" />
 
         <Button
-            android:id="@+id/btn_nav"
+            android:id="@+id/navigate"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,18 +55,6 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center_horizontal|center_vertical"
-                android:textColor="@color/blue"
-                android:textSize="24sp"
-                android:visibility="gone" />
-
-            <TextView
-                android:id="@+id/title_small2"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:autoText="false"
-                android:gravity="center_horizontal|center_vertical"
-                android:text="@string/teory1"
                 android:textColor="@color/blue"
                 android:textSize="24sp"
                 android:visibility="gone" />
@@ -247,7 +235,7 @@
             android:text="@string/left"
             android:textSize="14sp"
             android:theme="@style/button"
-            android:visibility="visible" />
+            android:visibility="invisible" />
 
         <Button
             android:id="@+id/exit"
@@ -276,7 +264,7 @@
             android:text="@string/right"
             android:textSize="14sp"
             android:theme="@style/button"
-            android:visibility="visible" />
+            android:visibility="invisible" />
     </LinearLayout>
 
 
