@@ -55,38 +55,36 @@ public class ConspectActivity extends Activity {
         });
     }
     void init(){
-        conspects[0] = new Conspect(findViewById(R.id.c0), ((Button)findViewById(R.id.b0)).getText().toString(), "Устройство компьютера");
-        conspects[1] = new Conspect(findViewById(R.id.c1), ((Button)findViewById(R.id.b1)).getText().toString(), "Устройство компьютера");
-        conspects[2] = new Conspect(findViewById(R.id.c2), ((Button)findViewById(R.id.b2)).getText().toString(), "Устройство компьютера");
-        conspects[3] = new Conspect(findViewById(R.id.c3), ((Button)findViewById(R.id.b3)).getText().toString(), "Системы счисления");
-        conspects[4] = new Conspect(findViewById(R.id.c4), ((Button)findViewById(R.id.b4)).getText().toString(), "Системы счисления");
-        conspects[5] = new Conspect(findViewById(R.id.c5), ((Button)findViewById(R.id.b5)).getText().toString(), "Системы счисления");
-        conspects[6] = new Conspect(findViewById(R.id.c6), ((Button)findViewById(R.id.b6)).getText().toString(), "Хранение данных");
-        conspects[7] = new Conspect(findViewById(R.id.c7), ((Button)findViewById(R.id.b7)).getText().toString(), "Хранение данных");
-        conspects[8] = new Conspect(findViewById(R.id.c8), ((Button)findViewById(R.id.b8)).getText().toString(), "Хранение данных");
-        conspects[9] = new Conspect(findViewById(R.id.c9), ((Button)findViewById(R.id.b9)).getText().toString(), "Хранение данных");
-        conspects[10] = new Conspect(findViewById(R.id.c10), ((Button)findViewById(R.id.b10)).getText().toString(), "Хранение данных");
-        conspects[11] = new Conspect(findViewById(R.id.c11), ((Button)findViewById(R.id.b11)).getText().toString(), "Алгебра логики");
-        conspects[12] = new Conspect(findViewById(R.id.c12), ((Button)findViewById(R.id.b12)).getText().toString(), "Алгебра логики");
-        conspects[13] = new Conspect(findViewById(R.id.c13), ((Button)findViewById(R.id.b13)).getText().toString(), "Языки программирования");
-        conspects[14] = new Conspect(findViewById(R.id.c14), ((Button)findViewById(R.id.b14)).getText().toString(), "Языки программирования");
-        conspects[15] = new Conspect(findViewById(R.id.c15), ((Button)findViewById(R.id.b15)).getText().toString(), "Языки программирования");
-        conspects[16] = new Conspect(findViewById(R.id.c16), ((Button)findViewById(R.id.b16)).getText().toString(), "Основные понятия");
-        conspects[17] = new Conspect(findViewById(R.id.c17), ((Button)findViewById(R.id.b17)).getText().toString(), "Основные понятия");
-        conspects[18] = new Conspect(findViewById(R.id.c18), ((Button)findViewById(R.id.b18)).getText().toString(), "Основные понятия");
-        conspects[19] = new Conspect(findViewById(R.id.c19), ((Button)findViewById(R.id.b19)).getText().toString(), "Основные понятия");
-        conspects[20] = new Conspect(findViewById(R.id.c20), ((Button)findViewById(R.id.b20)).getText().toString(), "Основные понятия");
+        conspects[0] = new Conspect(findViewById(R.id.c0), ((Button)findViewById(R.id.b0)).getText().toString());
+        conspects[1] = new Conspect(findViewById(R.id.c1), ((Button)findViewById(R.id.b1)).getText().toString());
+        conspects[2] = new Conspect(findViewById(R.id.c2), ((Button)findViewById(R.id.b2)).getText().toString());
+        conspects[3] = new Conspect(findViewById(R.id.c3), ((Button)findViewById(R.id.b3)).getText().toString());
+        conspects[4] = new Conspect(findViewById(R.id.c4), ((Button)findViewById(R.id.b4)).getText().toString());
+        conspects[5] = new Conspect(findViewById(R.id.c5), ((Button)findViewById(R.id.b5)).getText().toString());
+        conspects[6] = new Conspect(findViewById(R.id.c6), ((Button)findViewById(R.id.b6)).getText().toString());
+        conspects[7] = new Conspect(findViewById(R.id.c7), ((Button)findViewById(R.id.b7)).getText().toString());
+        conspects[8] = new Conspect(findViewById(R.id.c8), ((Button)findViewById(R.id.b8)).getText().toString());
+        conspects[9] = new Conspect(findViewById(R.id.c9), ((Button)findViewById(R.id.b9)).getText().toString());
+        conspects[10] = new Conspect(findViewById(R.id.c10), ((Button)findViewById(R.id.b10)).getText().toString());
+        conspects[11] = new Conspect(findViewById(R.id.c11), ((Button)findViewById(R.id.b11)).getText().toString());
+        conspects[12] = new Conspect(findViewById(R.id.c12), ((Button)findViewById(R.id.b12)).getText().toString());
+        conspects[13] = new Conspect(findViewById(R.id.c13), ((Button)findViewById(R.id.b13)).getText().toString());
+        conspects[14] = new Conspect(findViewById(R.id.c14), ((Button)findViewById(R.id.b14)).getText().toString());
     }
     void repaint(){
         conspects[now].layout.setVisibility(View.VISIBLE);
         title_small.setText(conspects[now].title);
-        title_big.setText(conspects[now].title_big);
+        if (memory.getIntExtra("layout", 0) == 0){
+            title_big.setText(R.string.teory);
+        }else{
+            title_big.setText(R.string.practic);
+        }
         title_small.setVisibility(View.VISIBLE);
         btn_left.setVisibility(View.VISIBLE);
         btn_right.setVisibility(View.VISIBLE);
-        if (now == 0 || now == 13){
+        if (now == 0){
             btn_left.setVisibility(View.INVISIBLE);
-        }else if (now == 12 || now == 20){
+        }else if (now == 14){
             btn_right.setVisibility(View.INVISIBLE);
         }
     }

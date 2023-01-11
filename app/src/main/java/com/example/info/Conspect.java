@@ -7,9 +7,8 @@ public class Conspect {
     String title;
     String title_big;
 
-    public Conspect(LinearLayout layout, String title, String title_big) {
+    public Conspect(LinearLayout layout, String title) {
         this.layout = layout;
         this.title = title;
-        this.title_big = title_big;
     }
 }

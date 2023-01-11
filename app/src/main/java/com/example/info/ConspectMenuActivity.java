@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
@@ -15,7 +16,7 @@ public class ConspectMenuActivity extends Activity {
     Button btn;
     ScrollView scrollView;
     View v;
-
+    TextView title_small;
 
 
     @Override
@@ -24,12 +25,14 @@ public class ConspectMenuActivity extends Activity {
         scrollView = findViewById(R.id.sc);
         setContentView(R.layout.conspect_menu);
         btn = findViewById(R.id.exit);
+        title_small = findViewById(R.id.title_small);
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         if (getIntent().getIntExtra("layout", 0) == 0){
-           v = findViewById(R.id.l_id);
+           title_small.setText(R.string.teory);
         }else{
-            v = findViewById(R.id.l_id_python);
+            title_small.setText(R.string.practic);
         }
+        v = findViewById(R.id.l_id);
         v.setVisibility(View.VISIBLE);
         findViewById(R.id.b0).setOnClickListener(onClickListener);
         findViewById(R.id.b1).setOnClickListener(onClickListener);
@@ -46,12 +49,6 @@ public class ConspectMenuActivity extends Activity {
         findViewById(R.id.b12).setOnClickListener(onClickListener);
         findViewById(R.id.b13).setOnClickListener(onClickListener);
         findViewById(R.id.b14).setOnClickListener(onClickListener);
-        findViewById(R.id.b15).setOnClickListener(onClickListener);
-        findViewById(R.id.b16).setOnClickListener(onClickListener);
-        findViewById(R.id.b17).setOnClickListener(onClickListener);
-        findViewById(R.id.b18).setOnClickListener(onClickListener);
-        findViewById(R.id.b19).setOnClickListener(onClickListener);
-        findViewById(R.id.b20).setOnClickListener(onClickListener);
 
         btn.setOnClickListener(view -> {
             finish();
@@ -62,6 +59,7 @@ public class ConspectMenuActivity extends Activity {
         @Override
         public void onClick(View view) {
             Intent intent = new Intent(ConspectMenuActivity.this, ConspectActivity.class);
+            intent.putExtra("layout", getIntent().getIntExtra("layout", 0));
             switch (view.getId()) {
                 case R.id.b0:
                     intent.putExtra("now", 0);
@@ -121,30 +119,6 @@ public class ConspectMenuActivity extends Activity {
                     break;
                 case R.id.b14:
                     intent.putExtra("now", 14);
-                    startActivity(intent);
-                    break;
-                case R.id.b15:
-                    intent.putExtra("now", 15);
-                    startActivity(intent);
-                    break;
-                case R.id.b16:
-                    intent.putExtra("now", 16);
-                    startActivity(intent);
-                    break;
-                case R.id.b17:
-                    intent.putExtra("now", 17);
-                    startActivity(intent);
-                    break;
-                case R.id.b18:
-                    intent.putExtra("now", 18);
-                    startActivity(intent);
-                    break;
-                case R.id.b19:
-                    intent.putExtra("now", 19);
-                    startActivity(intent);
-                    break;
-                case R.id.b20:
-                    intent.putExtra("now", 20);
                     startActivity(intent);
                     break;
             }

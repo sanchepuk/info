@@ -21,9 +21,9 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center_horizontal|top"
-        android:text="для ОГЭ и ЕГЭ"
+        android:text="для ОГЭ"
         android:textColor="@color/blue"
-        android:textSize="20sp" />
+        android:textSize="24sp" />
 
     <LinearLayout
         android:id="@+id/j"
@@ -44,20 +44,26 @@
             android:background="@drawable/angles"
             android:backgroundTint="@color/blue"
             android:gravity="center"
-            android:text="Конспекты"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="@string/teory"
+            android:textSize="24sp"
             android:theme="@style/button" />
 
         <Button
             android:id="@+id/btn2"
             style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="30dp"
             android:layout_weight="1"
             android:background="@drawable/angles"
             android:backgroundTint="@color/blue"
             android:gravity="center"
-            android:text="Конспекты Python"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="@string/practic"
+            android:textSize="24sp"
             android:theme="@style/button" />
 
         <Button
@@ -70,7 +76,10 @@
             android:background="@drawable/angles"
             android:backgroundTint="@color/blue"
             android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
             android:text="Игра"
+            android:textSize="24sp"
             android:theme="@style/button" />
 
     </LinearLayout>

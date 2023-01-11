@@ -6,225 +6,228 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="Устройство компьютера"
-        android:textColor="@color/blue"
-        android:textSize="24sp" />
-
     <Button
         android:id="@+id/b0"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:background="@drawable/angles"
         android:backgroundTint="@color/blue"
         android:gravity="center"
-        android:text="Процессор"
+        android:text="1. Количественные параметры информационных объектов"
         android:theme="@style/button"
+        android:visibility="visible"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/b1"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:background="@drawable/angles"
         android:backgroundTint="@color/blue"
         android:gravity="center"
-        android:text="Память"
+        android:text="2. Кодирование и декодирование информации"
         android:theme="@style/button"
+        android:visibility="visible"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/b2"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:background="@drawable/angles"
         android:backgroundTint="@color/blue"
         android:gravity="center"
-        android:text="Периферийные устройства"
+        android:text="3. Значение логического выражения"
         android:theme="@style/button"
+        android:visibility="visible"
         tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="Системы счисления"
-        android:textColor="@color/blue"
-        android:textSize="24sp" />
 
     <Button
         android:id="@+id/b3"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:background="@drawable/angles"
         android:backgroundTint="@color/blue"
         android:gravity="center"
-        android:text="Что такое системы счисления"
+        android:text="4. Формальные описания реальных объектов и процессов"
         android:theme="@style/button"
+        android:visibility="visible"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/b4"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:background="@drawable/angles"
         android:backgroundTint="@color/blue"
         android:gravity="center"
-        android:text="Перевод из одной системы в другую"
+        android:text="5. Простой линейный алгоритм для формального исполнителя"
         android:theme="@style/button"
+        android:visibility="visible"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/b5"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:background="@drawable/angles"
         android:backgroundTint="@color/blue"
         android:gravity="center"
-        android:text="Двоичная система счисления"
+        android:text="6. Программа с условным оператором "
         android:theme="@style/button"
+        android:visibility="visible"
         tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="Хранение данных"
-        android:textColor="@color/blue"
-        android:textSize="24sp" />
 
     <Button
         android:id="@+id/b6"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:background="@drawable/angles"
         android:backgroundTint="@color/blue"
         android:gravity="center"
-        android:text="Кодирование информации"
+        android:text="7. Информационно-коммуникационные технологии"
         android:theme="@style/button"
+        android:visibility="visible"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/b7"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:background="@drawable/angles"
         android:backgroundTint="@color/blue"
         android:gravity="center"
-        android:text="Хранение чисел"
+        android:text="8. Запросы для поисковых систем с использованием логических выражений"
         android:theme="@style/button"
+        android:visibility="visible"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/b8"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:background="@drawable/angles"
         android:backgroundTint="@color/blue"
         android:gravity="center"
-        android:text="Хранение чисел с плавающей точкой"
+        android:text="9. Анализирование информации, представленной в виде схем"
         android:theme="@style/button"
+        android:visibility="visible"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/b9"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:background="@drawable/angles"
         android:backgroundTint="@color/blue"
         android:gravity="center"
-        android:text="Хранение изображений"
+        android:text="10. Сравнение чисел в различных системах счисления "
         android:theme="@style/button"
+        android:visibility="visible"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/b10"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:background="@drawable/angles"
         android:backgroundTint="@color/blue"
         android:gravity="center"
-        android:text="Хранение аудио и видеофайлов"
+        android:text="11. Использование поиска операционной системы и текстового редактора"
         android:theme="@style/button"
+        android:visibility="visible"
         tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="Алгебра логики"
-        android:textColor="@color/blue"
-        android:textSize="24sp" />
 
     <Button
         android:id="@+id/b11"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:background="@drawable/angles"
         android:backgroundTint="@color/blue"
         android:gravity="center"
-        android:text="Основные понятия"
+        android:text="12. Использование поисковых средств операционной системы"
         android:theme="@style/button"
+        android:visibility="visible"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/b12"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:background="@drawable/angles"
         android:backgroundTint="@color/blue"
         android:gravity="center"
-        android:text="Хранение чисел"
+        android:text="13. Создание презентации или форматирование текста"
         android:theme="@style/button"
+        android:visibility="visible"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/b13"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/angles"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:text="14. Обработка большого массива данных"
+        android:theme="@style/button"
+        android:visibility="visible"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/b14"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/angles"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:text="15. Короткий алгоритм в различных средах исполнения"
+        android:theme="@style/button"
+        android:visibility="visible"
         tools:ignore="TouchTargetSizeCheck" />
 </LinearLayout>
