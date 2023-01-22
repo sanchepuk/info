@@ -6,6 +6,7 @@ import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -14,8 +15,11 @@ public class ControllerInfo {
     static LayoutInflater inflater;
     static Context context;
     static LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+    static LinearLayout.LayoutParams lp1 = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
     static LinearLayout layout;
     static void init(LayoutInflater inf, int block, int i, LinearLayout lay, Context c){
+        lp.weight = 1;
+        lp1.weight = 1;
         context = c;
         layout = lay;
         layout.removeAllViews();
@@ -72,6 +76,7 @@ public class ControllerInfo {
                     TextBlockMedium(getTextString(R.string.teory310));
                     TextBlockSmall(getTextString(R.string.teory311));
                     ImageBlock(R.drawable.teory34);
+                    break;
                 case 3:
                     TextBlockBig(getTextString(R.string.teory40));
                     TextBlockSmall(getTextString(R.string.teory41));
@@ -97,6 +102,61 @@ public class ControllerInfo {
                     AttentionBlock(getTextString(R.string.teory414));
                     AttentionBlock(getTextString(R.string.teory415));
                     AttentionBlock(getTextString(R.string.teory416));
+                    break;
+                case 5:
+                    TextBlockBig(getTextString(R.string.teory60));
+                    TextBlockMedium(getTextString(R.string.teory61));
+                    TextBlockSmall(getTextString(R.string.teory62));
+                    ExampleBlock(getTextString(R.string.teory63));
+                    AttentionBlock(getTextString(R.string.teory64));
+                    TextBlockSmall(getTextString(R.string.teory65));
+                    ImageBlock(R.drawable.teory6);
+                    TextBlockSmall(getTextString(R.string.teory66));
+                    ExampleBlock(getTextString(R.string.teory67));
+                    TextBlockMedium(getTextString(R.string.teory68));
+                    ImageBlock(R.drawable.teory60);
+                    TextBlockMedium(getTextString(R.string.teory69));
+                    TextBlockSmall(getTextString(R.string.teory610));
+                    ImageBlock(R.drawable.teory61);
+                    TextBlockBig(getTextString(R.string.teory611));
+                    TextBlockMedium(getTextString(R.string.teory612));
+                    TextBlockSmall(getTextString(R.string.teory613));
+                    TextBlockMedium(getTextString(R.string.teory614));
+                    ImageBlock(R.drawable.teory63);
+                    AttentionBlock(getTextString(R.string.teory615));
+                    TextBlockBig(getTextString(R.string.teory616));
+                    TextBlockMedium(getTextString(R.string.teory617));
+                    TextBlockSmall(getTextString(R.string.teory618));
+                    TextBlockSmall(getTextString(R.string.teory619));
+                    ImageBlock(R.drawable.teory62);
+                    break;
+            }
+        }else{
+            switch (i){
+                case 0:
+                    TaskBlock(1, getTextString(R.string.task10), getTextString(R.string.res10));
+                    TaskBlock(2, getTextString(R.string.task11), getTextString(R.string.res11));
+                    break;
+                case 1:
+                    TaskBlock(1, getTextString(R.string.task20), R.drawable.task20, getTextString(R.string.res20));
+                    TaskBlock(2, getTextString(R.string.task21), R.drawable.task21, getTextString(R.string.res21));
+                    break;
+                case 2:
+                    TaskBlock(1, getTextString(R.string.task30), R.drawable.task30, getTextString(R.string.res30));
+                    TaskBlock(2, getTextString(R.string.task31), R.drawable.task31, getTextString(R.string.res31));
+                    break;
+                case 3:
+                    TaskBlock(1, getTextString(R.string.task40), R.drawable.task40, getTextString(R.string.res40));
+                    TaskBlock(2, getTextString(R.string.task41), R.drawable.task41, getTextString(R.string.res41));
+                    break;
+                case 4:
+                    TaskBlock(1, getTextString(R.string.task50), getTextString(R.string.res50));
+                    TaskBlock(2, getTextString(R.string.task51), getTextString(R.string.res51));
+                    break;
+                case 5:
+                    TaskBlock(1, getTextString(R.string.task60), R.drawable.task60, getTextString(R.string.res60));
+                    TaskBlock(2, getTextString(R.string.task61), R.drawable.task61, getTextString(R.string.res61));
+                    break;
             }
         }
     }
@@ -117,7 +177,6 @@ public class ControllerInfo {
         View block = inflater.inflate(R.layout.text_block_medium, null);
         TextView tv = block.findViewById(R.id.text);
         tv.setText(text);
-        tv.setLayoutParams(lp);
         layout.addView(block);
     }
     @SuppressLint("SetTextI18n")
@@ -125,7 +184,6 @@ public class ControllerInfo {
         View block = inflater.inflate(R.layout.text_block_big, null);
         TextView tv = block.findViewById(R.id.text);
         tv.setText(text);
-        tv.setLayoutParams(lp);
         layout.addView(block);
     }
     @SuppressLint("SetTextI18n")
@@ -133,7 +191,6 @@ public class ControllerInfo {
         View block = inflater.inflate(R.layout.formule_block, null);
         TextView tv = block.findViewById(R.id.text);
         tv.setText(text);
-        tv.setLayoutParams(lp);
         layout.addView(block);
     }
 
@@ -142,7 +199,6 @@ public class ControllerInfo {
         View block = inflater.inflate(R.layout.attention_block, null);
         TextView tv = block.findViewById(R.id.text);
         tv.setText(text);
-        tv.setLayoutParams(lp);
         layout.addView(block);
     }
 
@@ -151,7 +207,6 @@ public class ControllerInfo {
         View block = inflater.inflate(R.layout.example_block, null);
         TextView tv = block.findViewById(R.id.text);
         tv.setText(text);
-        tv.setLayoutParams(lp);
         layout.addView(block);
     }
 
@@ -160,6 +215,75 @@ public class ControllerInfo {
         View block = inflater.inflate(R.layout.image_block, null);
         ImageView image = block.findViewById(R.id.image);
         image.setImageResource(id);
+        layout.addView(block);
+    }
+
+    @SuppressLint("SetTextI18n")
+    static void TaskBlock(int num, String task, String result){
+        View block = inflater.inflate(R.layout.task_block, null);
+        TextView tvnum = block.findViewById(R.id.num);
+        tvnum.setText(Integer.toString(num));
+        TextView tv = block.findViewById(R.id.text);
+        tv.setText(task);
+        TextView rtv = block.findViewById(R.id.res);
+        Button btn = block.findViewById(R.id.button);
+        btn.setTag("0");
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (view.getTag() == "0"){
+                    rtv.setLayoutParams(lp);
+                    btn.setText("Скрыть ответ");
+                    rtv.setText(result);
+                    rtv.setBackground(null);
+                    view.setTag("1");
+                }else{
+                    rtv.setLayoutParams(lp1);
+                    btn.setText("Узнать ответ");
+                    rtv.setText("");
+                    rtv.setBackgroundResource(R.drawable.background);
+                    view.setTag("0");
+                }
+
+
+            }
+        });
+        ImageView image = block.findViewById(R.id.image);
+        image.setVisibility(View.GONE);
+        layout.addView(block);
+    }
+    @SuppressLint("SetTextI18n")
+    static void TaskBlock(int num, String task, int idImage, String result){
+        View block = inflater.inflate(R.layout.task_block, null);
+        TextView tvnum = block.findViewById(R.id.num);
+        tvnum.setText(Integer.toString(num));
+        TextView tv = block.findViewById(R.id.text);
+        tv.setText(task);
+        TextView rtv = block.findViewById(R.id.res);
+        TextView btn = block.findViewById(R.id.button);
+        btn.setTag("0");
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (view.getTag() == "0"){
+                    rtv.setLayoutParams(lp);
+                    btn.setText("Скрыть ответ");
+                    rtv.setText(result);
+                    rtv.setBackground(null);
+                    view.setTag("1");
+                }else{
+                    rtv.setLayoutParams(lp1);
+                    btn.setText("Узнать ответ");
+                    rtv.setText("");
+                    rtv.setBackgroundResource(R.drawable.background);
+                    view.setTag("0");
+                }
+
+
+            }
+        });
+        ImageView image = block.findViewById(R.id.image);
+        image.setImageResource(idImage);
         layout.addView(block);
     }
 }
