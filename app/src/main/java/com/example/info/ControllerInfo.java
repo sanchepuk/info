@@ -130,6 +130,58 @@ public class ControllerInfo {
                     TextBlockSmall(getTextString(R.string.teory619));
                     ImageBlock(R.drawable.teory62);
                     break;
+                case 6:
+                    TextBlockBig(getTextString(R.string.teory70));
+                    TextBlockMedium(getTextString(R.string.teory71));
+                    TextBlockMedium(getTextString(R.string.teory72));
+                    TextBlockSmall(getTextString(R.string.teory73));
+                    TextBlockMedium(getTextString(R.string.teory74));
+                    TextBlockSmall(getTextString(R.string.teory75));
+                    TextBlockMedium(getTextString(R.string.teory76));
+                    ImageBlock(R.drawable.teory7);
+                    TextBlockSmall(getTextString(R.string.teory77));
+                    break;
+                case 7:
+                    TextBlockBig(getTextString(R.string.teory80));
+                    TextBlockMedium(getTextString(R.string.teory81));
+                    TextBlockSmall(getTextString(R.string.teory82));
+                    AttentionBlock(getTextString(R.string.teory83));
+                    TextBlockMedium(getTextString(R.string.teory84));
+                    TextBlockSmall(getTextString(R.string.teory85));
+                    AttentionBlock(getTextString(R.string.teory86));
+                    TextBlockBig(getTextString(R.string.teory87));
+                    ImageBlock(R.drawable.teory80);
+                    TextBlockSmall(getTextString(R.string.teory88));
+                    TextBlockMedium(getTextString(R.string.teory89));
+                    ImageBlock(R.drawable.teory81);
+                    TextBlockSmall(getTextString(R.string.teory810));
+                    TextBlockMedium(getTextString(R.string.teory811));
+                    ImageBlock(R.drawable.teory82);
+                    TextBlockBig(getTextString(R.string.teory812));
+                    FormuleBlock(getTextString(R.string.teory813));
+                    FormuleBlock(getTextString(R.string.teory814));
+                    break;
+                case 8:
+                    TextBlockBig(getTextString(R.string.teory90));
+                    TextBlockSmall(getTextString(R.string.teory91));
+                    FormuleBlock(getTextString(R.string.teory92));
+                    TextBlockSmall(getTextString(R.string.teory93));
+                    TextBlockMedium(getTextString(R.string.teory94));
+                    break;
+                case 9:
+                    TextBlockBig(getTextString(R.string.teory100));
+                    TextBlockMedium(getTextString(R.string.teory101));
+                    ImageBlock(R.drawable.teory100);
+                    TextBlockMedium(getTextString(R.string.teory102));
+                    ImageBlock(R.drawable.teory101);
+                    TextBlockBig(getTextString(R.string.teory103));
+                    TextBlockMedium(getTextString(R.string.teory104));
+                    ImageBlock(R.drawable.teory102);
+                    TextBlockMedium(getTextString(R.string.teory105));
+                    ImageBlock(R.drawable.teory103);
+                    TextBlockMedium(getTextString(R.string.teory106));
+                    ImageBlock(R.drawable.teory105);
+                    ImageBlock(R.drawable.teory104);
             }
         }else{
             switch (i){
@@ -168,6 +220,10 @@ public class ControllerInfo {
                 case 8:
                     TaskBlock(1, getTextString(R.string.task90), R.drawable.task90, getTextString(R.string.res90));
                     TaskBlock(2, getTextString(R.string.task91), R.drawable.task91, getTextString(R.string.res91));
+                    break;
+                case 9:
+                    TaskBlock(1, getTextString(R.string.task100), R.drawable.task100, getTextString(R.string.res100));
+                    TaskBlock(2, getTextString(R.string.task101), R.drawable.task101, getTextString(R.string.res101));
                     break;
             }
         }
@@ -264,6 +320,7 @@ public class ControllerInfo {
         image.setVisibility(View.GONE);
         layout.addView(block);
     }
+
     @SuppressLint("SetTextI18n")
     static void TaskBlock(int num, String task, int idImage, String result){
         View block = inflater.inflate(R.layout.task_block, null);

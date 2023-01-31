@@ -98,14 +98,8 @@ public class ConspectActivity extends Activity {
 
     void repaint(){
         ControllerInfo.init(inflater, now_layout, now, layout, context);
+        navigate.setVisibility(View.VISIBLE);
         title_small.setText(names[now]);
-        if (now_layout == 0){
-            title_big.setText(R.string.teory);
-            navigate.setText(R.string.practic);
-        }else{
-            title_big.setText(R.string.practic);
-            navigate.setText(R.string.teory);
-        }
         title_small.setVisibility(View.VISIBLE);
         btn_left.setVisibility(View.VISIBLE);
         btn_right.setVisibility(View.VISIBLE);
@@ -114,5 +108,19 @@ public class ConspectActivity extends Activity {
         }else if (now == 14){
             btn_right.setVisibility(View.INVISIBLE);
         }
+        if (now_layout == 0){
+            title_big.setText(R.string.teory);
+            navigate.setText(R.string.practic);
+            if (now > 9) {
+                navigate.setVisibility(View.INVISIBLE);
+            }
+        }else{
+            title_big.setText(R.string.practic);
+            navigate.setText(R.string.teory);
+            if (now == 9){
+                btn_right.setVisibility(View.INVISIBLE);
+            }
+        }
     }
 }
+

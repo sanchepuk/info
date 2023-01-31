@@ -31,6 +31,11 @@ public class ConspectMenuActivity extends Activity {
            title_small.setText(R.string.teory);
         }else{
             title_small.setText(R.string.practic);
+            findViewById(R.id.b10).setVisibility(View.GONE);
+            findViewById(R.id.b11).setVisibility(View.GONE);
+            findViewById(R.id.b12).setVisibility(View.GONE);
+            findViewById(R.id.b13).setVisibility(View.GONE);
+            findViewById(R.id.b14).setVisibility(View.GONE);
         }
         v = findViewById(R.id.l_id);
         v.setVisibility(View.VISIBLE);
@@ -49,6 +54,7 @@ public class ConspectMenuActivity extends Activity {
         findViewById(R.id.b12).setOnClickListener(onClickListener);
         findViewById(R.id.b13).setOnClickListener(onClickListener);
         findViewById(R.id.b14).setOnClickListener(onClickListener);
+
 
         btn.setOnClickListener(view -> {
             finish();
