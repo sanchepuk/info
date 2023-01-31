@@ -157,6 +157,18 @@ public class ControllerInfo {
                     TaskBlock(1, getTextString(R.string.task60), R.drawable.task60, getTextString(R.string.res60));
                     TaskBlock(2, getTextString(R.string.task61), R.drawable.task61, getTextString(R.string.res61));
                     break;
+                case 6:
+                    TaskBlock(1, getTextString(R.string.task70), getTextString(R.string.res70));
+                    TaskBlock(2, getTextString(R.string.task71), getTextString(R.string.res71));
+                    break;
+                case 7:
+                    TaskBlock(1, getTextString(R.string.task80), R.drawable.task80, getTextString(R.string.res80));
+                    TaskBlock(2, getTextString(R.string.task81), R.drawable.task81, getTextString(R.string.res81));
+                    break;
+                case 8:
+                    TaskBlock(1, getTextString(R.string.task90), R.drawable.task90, getTextString(R.string.res90));
+                    TaskBlock(2, getTextString(R.string.task91), R.drawable.task91, getTextString(R.string.res91));
+                    break;
             }
         }
     }
