@@ -20,11 +20,12 @@ public class ResultActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.task_result);
-        tv = findViewById(R.id.res);
+        tv = findViewById(R.id.result);
         retry = findViewById(R.id.retry);
         exit = findViewById(R.id.exit);
 
-        //tv.setText("Результат:\n" + getIntent().getIntExtra("result",0) + " из 10");
+        String s = "Результат:\n" + Integer.toString(getIntent().getIntExtra("result",0)) + " из 10";
+        tv.setText(s);
 
         retry.setOnClickListener(new View.OnClickListener() {
             @Override
