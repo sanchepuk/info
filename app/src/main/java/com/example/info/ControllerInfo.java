@@ -103,6 +103,17 @@ public class ControllerInfo {
                     AttentionBlock(getTextString(R.string.teory415));
                     AttentionBlock(getTextString(R.string.teory416));
                     break;
+                case 4:
+                    TextBlockSmall(getTextString(R.string.teory50));
+                    TextBlockBig(getTextString(R.string.teory51));
+                    TextBlockSmall(getTextString(R.string.teory52));
+                    ImageBlock(R.drawable.teory50);
+                    TextBlockSmall(getTextString(R.string.teory53));
+                    ImageBlock(R.drawable.teory51);
+                    TextBlockSmall(getTextString(R.string.teory54));
+                    ImageBlock(R.drawable.teory52);
+                    TextBlockMedium(getTextString(R.string.teory55));
+                    break;
                 case 5:
                     TextBlockBig(getTextString(R.string.teory60));
                     TextBlockMedium(getTextString(R.string.teory61));
@@ -182,6 +193,83 @@ public class ControllerInfo {
                     TextBlockMedium(getTextString(R.string.teory106));
                     ImageBlock(R.drawable.teory105);
                     ImageBlock(R.drawable.teory104);
+                    break;
+                case 10:
+                    TextBlockBig(getTextString(R.string.teory110));
+                    TextBlockSmall(getTextString(R.string.teory11_1));
+                    TextBlockBig(getTextString(R.string.teory11_2));
+                    TextBlockSmall(getTextString(R.string.teory11_3));
+                    ImageBlock(R.drawable.teory110);
+                    TextBlockSmall(getTextString(R.string.teory11_4));
+                    TextBlockMedium(getTextString(R.string.teory11_5));
+                    break;
+                case 11:
+                    TextBlockBig(getTextString(R.string.teory120));
+                    TextBlockSmall(getTextString(R.string.teory121));
+                    ImageBlock(R.drawable.teory120);
+                    TextBlockSmall(getTextString(R.string.teory122));
+                    ImageBlock(R.drawable.teory121);
+                    TextBlockSmall(getTextString(R.string.teory123));
+                    TextBlockMedium(getTextString(R.string.teory124));
+                    //ImageBlock(R.drawable.teory122);
+                    AttentionBlock(getTextString(R.string.teory1224));
+                    TextBlockSmall(getTextString(R.string.teory125));
+                    ImageBlock(R.drawable.teory124);
+                    TextBlockBig(getTextString(R.string.teory126));
+                    TextBlockSmall(getTextString(R.string.teory127));
+                    AttentionBlock(getTextString(R.string.teory1221));
+                    TextBlockMedium(getTextString(R.string.teory128));
+                    TextBlockSmall(getTextString(R.string.teory129));
+                    ImageBlock(R.drawable.teory125);
+                    TextBlockBig(getTextString(R.string.teory1210));
+                    TextBlockSmall(getTextString(R.string.teory1211));
+                    TextBlockSmall(getTextString(R.string.teory1212));
+                    TextBlockSmall(getTextString(R.string.teory1213));
+                    ImageBlock(R.drawable.teory126);
+                    TextBlockSmall(getTextString(R.string.teory1214));
+                    AttentionBlock(getTextString(R.string.teory1222));
+                    TextBlockSmall(getTextString(R.string.teory1215));
+                    TextBlockSmall(getTextString(R.string.teory1216));
+                    AttentionBlock(getTextString(R.string.teory1223));
+                    TextBlockSmall(getTextString(R.string.teory1217));
+                    ImageBlock(R.drawable.teory127);
+                    TextBlockSmall(getTextString(R.string.teory1218));
+                    ImageBlock(R.drawable.teory128);
+                    TextBlockSmall(getTextString(R.string.teory1219));
+                    ImageBlock(R.drawable.teory129);
+                    TextBlockSmall(getTextString(R.string.teory1220));
+                    ImageBlock(R.drawable.teory1210);
+                    break;
+                case 12:
+                    TextBlockBig(getTextString(R.string.teory130));
+                    TextBlockSmall(getTextString(R.string.teory131));
+                    break;
+                case 13:
+                    TextBlockBig(getTextString(R.string.teory140));
+                    TextBlockMedium(getTextString(R.string.teory141));
+                    TextBlockSmall(getTextString(R.string.teory142));
+                    ImageBlock(R.drawable.teory140);
+                    TextBlockSmall(getTextString(R.string.teory143));
+                    TextBlockSmall(getTextString(R.string.teory144));
+                    ImageBlock(R.drawable.teory141);
+                    TextBlockSmall(getTextString(R.string.teory145));
+                    ImageBlock(R.drawable.teory142);
+                    TextBlockBig(getTextString(R.string.teory149));
+                    ImageBlock(R.drawable.teory143);
+                    TextBlockBig(getTextString(R.string.teory146));
+                    TextBlockSmall(getTextString(R.string.teory147));
+                    ImageBlock(R.drawable.teory145);
+                    TextBlockSmall(getTextString(R.string.teory148));
+                    ImageBlock(R.drawable.teory146);
+                    break;
+                case 14:
+                    TextBlockBig(getTextString(R.string.teory150));
+                    TextBlockSmall(getTextString(R.string.teory151));
+                    TextBlockMedium(getTextString(R.string.teory152));
+                    ImageBlock(R.drawable.teory150);
+                    TextBlockBig(getTextString(R.string.teory153));
+                    ImageBlock(R.drawable.teory151);
+                    break;
             }
         }else{
             switch (i){
