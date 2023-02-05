@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/title_big"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/txt_name"
+            android:textColor="@color/blue"
+            android:textSize="34sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/navigate"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/angles"
+            android:backgroundTint="@color/blue"
+            android:gravity="center"
+            android:text="@string/exit"
+            android:theme="@style/button"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:visibility="visible"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/res_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/enter_text"
+        android:textColor="@color/blue"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/continue_btn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/angles"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:text="@string/dalee"
+        android:theme="@style/button"
+        android:visibility="visible" />
+
+</LinearLayout>

@@ -24,7 +24,7 @@ public class ConspectMenuActivity extends Activity {
         super.onCreate(savedInstanceState);
         scrollView = findViewById(R.id.sc);
         setContentView(R.layout.conspect_menu);
-        btn = findViewById(R.id.exit);
+        btn = findViewById(R.id.continue_btn);
         title_small = findViewById(R.id.title_small);
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         if (getIntent().getIntExtra("layout", 0) == 0){

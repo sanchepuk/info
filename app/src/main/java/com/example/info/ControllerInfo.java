@@ -316,7 +316,7 @@ public class ControllerInfo {
             }
         }
     }
-    static String getTextString(int id){
+    public static String getTextString(int id){
         return context.getResources().getString(id);
     }
 

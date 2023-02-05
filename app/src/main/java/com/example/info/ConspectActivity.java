@@ -12,8 +12,6 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import java.util.zip.Inflater;
-
 public class ConspectActivity extends Activity {
     Button btn_left;
     Button btn_right;
@@ -36,7 +34,7 @@ public class ConspectActivity extends Activity {
         context = this;
         btn_left = findViewById(R.id.left);
         btn_right = findViewById(R.id.right);
-        btn_exit = findViewById(R.id.exit);
+        btn_exit = findViewById(R.id.continue_btn);
         title_small = findViewById(R.id.title_small);
         title_big = findViewById(R.id.title_big);
         navigate = findViewById(R.id.navigate);

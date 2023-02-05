@@ -17,12 +17,14 @@ public class MainActivity extends AppCompatActivity {
     Button btn_teory;
     LinearLayout j;
     Button btn_task;
+    Button btn_game;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         btn_teory = findViewById(R.id.btn1);
         btn_task = findViewById(R.id.btn2);
+        btn_game = findViewById(R.id.btn3);
         layout = findViewById(R.id.l_id1);
         j = findViewById(R.id.j);
         tv = new TextView(this);
@@ -36,6 +38,10 @@ public class MainActivity extends AppCompatActivity {
         btn_task.setOnClickListener(view ->{
             Intent intent = new Intent(MainActivity.this, ConspectMenuActivity.class);
             intent.putExtra("layout", 1);
+            startActivity(intent);
+        });
+        btn_game.setOnClickListener(view ->{
+            Intent intent = new Intent(MainActivity.this, TaskActivity.class);
             startActivity(intent);
         });
     }

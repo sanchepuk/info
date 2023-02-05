@@ -378,4 +378,8 @@ MicrosoftOffice → Microsoft Power Point. Открылся макет перв�
     <string name="teory">Теория</string>
     <string name="practic">Практика</string>
     <string name="left"><![CDATA[<-]]></string>
+    <string name="txt_name">Игра</string>
+    <string name="dalee">Далее</string>
+    <string name="retry">Заново</string>
+    <string name="enter_text">Введите текст</string>
 </resources>
